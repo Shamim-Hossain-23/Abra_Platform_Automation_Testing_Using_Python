@@ -1,0 +1,10 @@
+Logs/
+.pytest_cache/
+Screensorts/
+Reports/
+.idea/
+testCases/__pycache__/
+pageObject/__pycache__/
+Base/__pycache__/
+utilities/__pycache__/
+geckodriver.log
