@@ -6,7 +6,7 @@ from pageObject.Add_Building_pop_up import AddBuilding
 from utilities import XLUtils
 
 
-class Test_003_Add_Building:
+class TestAddBuilding:
     baseURL = ReadConfig.getApplicationUrl()
     username = ReadConfig.getUsername()
     password = ReadConfig.getPassword()
@@ -14,7 +14,7 @@ class Test_003_Add_Building:
     path = ".//TestData/AddBuildingdata.xlsx"
 
     def test_add_building_by_xlsx(self, setup):
-        self.log.info("************* Test_003_AddBuilding **********")
+        self.log.info("************* Test Add Building **********")
         self.driver = setup
         self.driver.get(self.baseURL)
         self.driver.maximize_window()
@@ -24,7 +24,7 @@ class Test_003_Add_Building:
         self.lp.setUserName(self.username)
         self.lp.setPassword(self.password)
         self.lp.clickLogin()
-        self.log.info("************* Login succesful **********")
+        self.log.info("************* Login successful **********")
 
         self.add_building = AddBuilding(self.driver)
         time.sleep(10)

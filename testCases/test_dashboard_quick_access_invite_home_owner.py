@@ -6,7 +6,7 @@ from pageObject.Dashboard_page import Dashboard
 from testCases.Abra_Base import BaseDriver
 
 
-class Test_Dashboard_Quick_Access_Invite_Home_Owner:
+class TestDashboardQuickAccessInviteHomeOwner:
     log = LogGen.custom_logger()
     baseURL = ReadConfig.getApplicationUrl()
     username = ReadConfig.getUsername()

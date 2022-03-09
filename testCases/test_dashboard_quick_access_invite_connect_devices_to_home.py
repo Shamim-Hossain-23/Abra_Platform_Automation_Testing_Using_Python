@@ -5,7 +5,7 @@ from utilities.customLogger import LogGen
 from pageObject.Dashboard_page import Dashboard
 
 
-class Test_Dashboard_Quick_Access_Connect_Devices_To_Home:
+class TestDashboardQuickAccessConnectDevicesToHome:
     log = LogGen.custom_logger()
     baseURL = ReadConfig.getApplicationUrl()
     username = ReadConfig.getUsername()

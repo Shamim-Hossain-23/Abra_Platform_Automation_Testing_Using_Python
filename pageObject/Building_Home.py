@@ -32,8 +32,22 @@ class AddHome(BaseDriver):
         self. wait_until_element_is_clickable(By.XPATH, self.lnk_add_home_xpath)
         self.driver.find_element(By.XPATH, self.lnk_add_home_xpath).click()
 
-    def click_select_building_selector(self, text):
+    def select_building_selector(self, expected_text):
         self. wait_until_element_is_clickable(By.ID, self.select_building_id)
         element = self.driver.find_element(By.ID, self.select_building_id)
         drop_down = Select(element)
+        drop_down.select_by_visible_text(expected_text)
+
+    def add_home_number(self, home_number):
+        number = self.driver.find_element(By.XPATH, self.input_home_number_id)
+        number.click()
+        number.send_keys(home_number)
+
+    def click_add_home_button(self):
+        self.driver.find_element(By.ID, self.btn_add_home_xpath).click()
+
+    def click_save_button(self):
+        self.driver.find_element(By.ID, self.btn_save_xpath).click()
+
+
 

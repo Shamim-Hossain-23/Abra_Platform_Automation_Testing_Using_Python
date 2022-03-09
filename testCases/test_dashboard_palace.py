@@ -5,7 +5,7 @@ from utilities.customLogger import LogGen
 from pageObject.Dashboard_page import Dashboard
 
 
-class Test_004_Dashboard_Palace:
+class TestDashboardPalace:
     baseURL = ReadConfig.getApplicationUrl()
     username = ReadConfig.getUsername()
     password = ReadConfig.getPassword()

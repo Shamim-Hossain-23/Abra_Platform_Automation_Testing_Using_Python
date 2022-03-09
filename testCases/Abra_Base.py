@@ -1,14 +1,15 @@
 import time
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
-from utilities.ReadProperties import ReadConfig
+# from pageObject.Login_page import LoginPage
+# from utilities.ReadProperties import ReadConfig
 from utilities.customLogger import LogGen
 
 
 class BaseDriver:
-    baseURL = ReadConfig.getApplicationUrl()
-    username = ReadConfig.getUsername()
-    password = ReadConfig.getPassword()
+    # baseURL = ReadConfig.getApplicationUrl()
+    # username = ReadConfig.getUsername()
+    # password = ReadConfig.getPassword()
     log = LogGen.custom_logger()
 
     def __init__(self, driver):

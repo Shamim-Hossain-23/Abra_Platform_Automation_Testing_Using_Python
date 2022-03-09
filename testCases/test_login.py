@@ -6,7 +6,7 @@ from utilities.ReadProperties import ReadConfig
 from utilities.customLogger import LogGen
 
 
-class Test_001_Login:
+class TestLogin:
 
     base_url = ReadConfig.getApplicationUrl()
     username = ReadConfig.getUsername()
@@ -33,7 +33,7 @@ class Test_001_Login:
     #         self.log.error("************************ Home Page Title Test is Failed ****************************")
     #         assert False
 
-    def testLogIn(self, setup):
+    def test_login(self, setup):
         self.log.info("************************ Verify Login Test ****************************")
 
         self.driver = setup
